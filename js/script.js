@@ -42,6 +42,8 @@ funcionamento.init();
 const slide = new Slide('.slide-animais', '.slide-wrapper');
 slide.init();
 
+slide.changeSlide(0);
+
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://www.mercadobitcoin.com.br/api/BTC/ticker', '.btc-preco')
