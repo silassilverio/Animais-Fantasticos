@@ -9,7 +9,7 @@ import Funcionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrollAnima from "./modules/scroll-anima.js";
-import { SlideNav } from "./modules/slide.js"
+import SlideNav from "./modules/slide.js"
 
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -42,7 +42,7 @@ funcionamento.init();
 const slide = new SlideNav('.slide-animais', '.slide-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
-slide.addControl();
+slide.addControl('.custom-controls');
 
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
