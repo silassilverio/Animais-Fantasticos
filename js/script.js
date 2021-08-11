@@ -42,7 +42,7 @@ funcionamento.init();
 const slide = new SlideNav('.slide-animais', '.slide-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
-
+slide.addControl();
 
 
 fetchAnimais('./animaisapi.json', '.numeros-grid');
