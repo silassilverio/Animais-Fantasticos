@@ -39,9 +39,8 @@ menuMobile.init();
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
 
-const slide = new SlideNav('.slide-animais', '.slide-wrapper');
+const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
-slide.addArrow('.prev', '.next');
 slide.addControl('.custom-controls');
 
 
